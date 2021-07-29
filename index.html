@@ -2,9 +2,83 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
-    </head>
-    <body>
+        <link rel="stylesheet" href="./components/header/header.css">
+        <link rel="stylesheet" href="./components/footer/footer.css">
+        <link rel="stylesheet" href="./components/card/card.css">
+        <link rel="stylesheet" href="./components/preview/preview.css">
+        <link rel="stylesheet" href="./components/checkbox/checkbox.css">
+        <style>
+            html, body {
+                height: 100%;
+            }
+            .page {
+                background: #F9FAFC;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
 
+            .page__box {
+                max-width: 1110px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .main {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body class="page">
+        <header class="header">
+            <div class="page__box">
+                <h1 class="header__title">Reusable component library</h1>
+            </div>
+        </header>
+        </div>
+        <main class="main">
+            <div class="page__box">
+                <form>
+                    <label class="checkbox" >
+                        <input type="checkbox" class="checkbox__input">
+                        <div class="checkbox__state">
+                            <div class="checkbox__control">
+                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p class="checkbox__legend">Default checkbox</p>
+                        </div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" disabled>
+                        <div class="checkbox__state">
+                            <div class="checkbox__control">
+                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p class="checkbox__legend">Default checkbox</p>
+                        </div>
+                    </label>
+                </form>
+            </div>
+            <div class="page__box preview">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="page__box">
+                <h2 class="footer__title">About</h2>
+                <p class="footer__desc">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+            </div>
+        </footer>
     </body>
 </html>
